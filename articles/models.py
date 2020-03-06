@@ -12,8 +12,8 @@ class Article(models.Model):
         on_delete=models.CASCADE,
     )
 
-def __str__(self):
-    return self.title
+    def __str__(self):
+        return self.title
 
-def get_absolute_url(self):
-    return reverse('article_detail', args=[str(self.id)])
+    def get_absolute_url(self):
+        return reverse('article_detail', args=[str(self.id)])
