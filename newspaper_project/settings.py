@@ -25,7 +25,7 @@ SECRET_KEY = 'e)#n-i=u4dt5cgbj6cb0yjy%vb8yge#5gknx)_^c8@zsi5ulp)'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -140,5 +140,6 @@ CRISPY_TEMPLATE_PACK = 'bootstrap'
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.sendgrid.net'
 EMAIL_HOST_USER = 'apikey'
+EMAIL_HOST_PASSWORD = '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'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
